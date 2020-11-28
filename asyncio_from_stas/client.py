@@ -20,7 +20,7 @@ async def main():
         print(await response_data1.json())
 
     await session.close()
-git
+
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
