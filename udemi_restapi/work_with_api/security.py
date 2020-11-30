@@ -1,6 +1,6 @@
 
 from werkzeug.security import safe_str_cmp
-from work_with_api.user import User
+from user import User
 
 users = [
 
