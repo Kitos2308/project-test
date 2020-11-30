@@ -6,6 +6,7 @@ from flask_jwt import JWT, jwt_required
 
 from security import authenticate, identity
 
+from user import UserRegister
 
 app = Flask(__name__)
 app.secret_key='jose'
@@ -67,8 +68,8 @@ class Itemlist(Resource):
 
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(Itemlist, '/items')
-
-app.run(port=5000)
+api.add_resource(UserRegister, '/register')
+app.run(port=5001)
 
 
 

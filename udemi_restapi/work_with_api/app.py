@@ -4,7 +4,7 @@ from flask_restful import Resource, Api, reqparse
 
 from flask_jwt import JWT, jwt_required
 
-from security import authenticate, identity
+from security1 import authenticate, identity
 
 
 app = Flask(__name__)
@@ -68,7 +68,7 @@ class Itemlist(Resource):
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(Itemlist, '/items')
 
-app.run(port=5001)
+app.run(port=5000)
 
 
 
