@@ -14,7 +14,7 @@ async def hello1(request1):
         host, port = peername
     else:
         print("request is empty")
-    return web.json_response(dict(response="Hello, world1", ip=host, port=port))
+    return web.json_response(dict(response="Hello World", ip=host, port=port))
 
 async def hello2(request):
     await asyncio.sleep(5)
