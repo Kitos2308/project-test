@@ -1,31 +1,25 @@
-from flask import Flask, request
 
-from flask_restful import Resource, Api, reqparse
-
-from flask_jwt import JWT, jwt_required
-
-from security import authenticate, identity
-
-from user import UserRegister
-
-app = Flask(__name__)
-app.secret_key='jose'
-api = Api(app)
-
-
-
-jwt =JWT(app, authenticate, identity)
-
-items = []
-
+import sqlite3
+from flask_restful import Resource, reqparse
+from flask_jwt import jwt_required
 
 
 class Item(Resource):
     #@app.route('/student/<string:name>')
     @jwt_required()
     def get(self, name):
-        item = next(filter(lambda x: x['name']==name, items), None)
-        return {"item": item}, 200 if item  else 404
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = "SELECT * FROM items WHERE name=?"
+        result= cursor.execute(query, (name,))
+        row = result.fetchone()
+        connection.close()
+
+        if row:
+            return {'item':{"name": row[0], "price": row[1]}}
+        return {"message": "Item not found"}, 404
+
 
 
     def post(self, name):
@@ -65,14 +59,3 @@ class Item(Resource):
 class Itemlist(Resource):
     def get(self):
         return {'items': items}
-
-api.add_resource(Item, '/item/<string:name>')
-api.add_resource(Itemlist, '/items')
-api.add_resource(UserRegister, '/register')
-app.run(port=5001)
-
-
-
-
-
-
