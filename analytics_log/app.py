@@ -4,7 +4,7 @@ import pandas as pd
 import datetime as dt
 file_name='logs.txt'
 
-from analitic import find_ip
+from analytic import Analytic
 
 
 path=os.path.abspath(file_name)
@@ -21,8 +21,8 @@ df = pd.read_csv(path,encoding='utf-8', sep=": " ,engine='python',
 
 
 
-print(df['date'])
 
 
+first=Analytic(df,"INFO")
 
-find_ip(df, "DEBUG")
+first.find_ip(df, "INFO")
