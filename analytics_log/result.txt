@@ -1,0 +1,180 @@
+date                    2020-11-29 15:04:34.149000
+level                                         INFO
+ip_address                            91.219.12.14
+sid           1ec5a276-8fb1-4cf5-96e0-310f0d45f01e
+method                                        POST
+api_route                          /api/v1/confirm
+Name: 2089, dtype: object
+============================================================================
+date                    2020-11-29 15:04:35.185000
+level                                         INFO
+ip_address                            91.220.12.14
+sid           1ec5a276-8fb1-4cf5-96e0-310f0d45f01e
+method                                        POST
+api_route                          /api/v1/confirm
+Name: 2090, dtype: object
+date                    2020-11-27 20:04:56.643000
+level                                         INFO
+ip_address                             91.108.0.68
+sid           bb0cce49-0973-4488-ba76-62b04d7c16e0
+method                                         GET
+api_route                          /api/v1/profile
+Name: 1187, dtype: object
+============================================================================
+date                    2020-11-27 20:04:57.556000
+level                                         INFO
+ip_address                             92.118.1.68
+sid           bb0cce49-0973-4488-ba76-62b04d7c16e0
+method                                        POST
+api_route                            /api/v1/login
+Name: 1321, dtype: object
+date                           2020-11-27 20:08:06
+level                                         INFO
+ip_address                             91.401.1.68
+sid           f4830e3b-5426-4f6a-bb69-02e145a833e3
+method                                         GET
+api_route                /api/v1/partnersInAirport
+Name: 1271, dtype: object
+============================================================================
+date                           2020-11-27 20:08:07
+level                                         INFO
+ip_address                              91.40.1.68
+sid           f4830e3b-5426-4f6a-bb69-02e145a833e3
+method                                         GET
+api_route                /api/v1/partnersInAirport
+Name: 1272, dtype: object
+date                    2020-11-29 15:04:34.149000
+level                                         INFO
+ip_address                            91.219.12.14
+sid           1ec5a276-8fb1-4cf5-96e0-310f0d45f01e
+method                                        POST
+api_route                          /api/v1/confirm
+Name: 2089, dtype: object
+============================================================================
+date                    2020-11-29 15:04:35.185000
+level                                         INFO
+ip_address                            91.220.12.14
+sid           1ec5a276-8fb1-4cf5-96e0-310f0d45f01e
+method                                        POST
+api_route                          /api/v1/confirm
+Name: 2090, dtype: object
+date                    2020-11-27 20:04:56.643000
+level                                         INFO
+ip_address                             91.108.0.68
+sid           bb0cce49-0973-4488-ba76-62b04d7c16e0
+method                                         GET
+api_route                          /api/v1/profile
+Name: 1187, dtype: object
+============================================================================
+date                    2020-11-27 20:04:57.556000
+level                                         INFO
+ip_address                             92.118.1.68
+sid           bb0cce49-0973-4488-ba76-62b04d7c16e0
+method                                        POST
+api_route                            /api/v1/login
+Name: 1321, dtype: object
+date                           2020-11-27 20:08:06
+level                                         INFO
+ip_address                             91.401.1.68
+sid           f4830e3b-5426-4f6a-bb69-02e145a833e3
+method                                         GET
+api_route                /api/v1/partnersInAirport
+Name: 1271, dtype: object
+============================================================================
+date                           2020-11-27 20:08:07
+level                                         INFO
+ip_address                              91.40.1.68
+sid           f4830e3b-5426-4f6a-bb69-02e145a833e3
+method                                         GET
+api_route                /api/v1/partnersInAirport
+Name: 1272, dtype: object
+date                    2020-11-29 15:04:34.149000
+level                                         INFO
+ip_address                            91.219.12.14
+sid           1ec5a276-8fb1-4cf5-96e0-310f0d45f01e
+method                                        POST
+api_route                          /api/v1/confirm
+Name: 2089, dtype: object
+============================================================================
+date                    2020-11-29 15:04:35.185000
+level                                         INFO
+ip_address                            91.220.12.14
+sid           1ec5a276-8fb1-4cf5-96e0-310f0d45f01e
+method                                        POST
+api_route                          /api/v1/confirm
+Name: 2090, dtype: object
+date                    2020-11-27 20:04:56.643000
+level                                         INFO
+ip_address                             91.108.0.68
+sid           bb0cce49-0973-4488-ba76-62b04d7c16e0
+method                                         GET
+api_route                          /api/v1/profile
+Name: 1187, dtype: object
+============================================================================
+date                    2020-11-27 20:04:57.556000
+level                                         INFO
+ip_address                             92.118.1.68
+sid           bb0cce49-0973-4488-ba76-62b04d7c16e0
+method                                        POST
+api_route                            /api/v1/login
+Name: 1321, dtype: object
+date                           2020-11-27 20:08:06
+level                                         INFO
+ip_address                             91.401.1.68
+sid           f4830e3b-5426-4f6a-bb69-02e145a833e3
+method                                         GET
+api_route                /api/v1/partnersInAirport
+Name: 1271, dtype: object
+============================================================================
+date                           2020-11-27 20:08:07
+level                                         INFO
+ip_address                              91.40.1.68
+sid           f4830e3b-5426-4f6a-bb69-02e145a833e3
+method                                         GET
+api_route                /api/v1/partnersInAirport
+Name: 1272, dtype: object
+=======================================prohibited routes=================================
+                        date  level       ip_address                                   sid method        api_route
+2    2020-11-27 16:17:07.281   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/profile
+3    2020-11-27 16:17:07.282   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/profile
+7    2020-11-27 16:17:43.207   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/profile
+8    2020-11-27 16:17:43.208   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/profile
+10   2020-11-27 16:17:44.886   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/profile
+...                      ...    ...              ...                                   ...    ...              ...
+2527 2020-11-30 07:37:02.470   INFO  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/profile
+2528 2020-11-30 07:37:02.550  DEBUG  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/profile
+2529 2020-11-30 07:37:02.555   INFO  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/profile
+2530 2020-11-30 07:37:02.574  DEBUG  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/profile
+2531 2020-11-30 07:37:02.580   INFO  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/profile
+
+[934 rows x 6 columns]====================================================================================
+=======================================prohibited routes=================================
+                        date  level       ip_address                                   sid method                  api_route
+0    2020-11-27 16:16:12.297   INFO   77.105.179.110  01df7e3d-ad04-47b0-af5d-b3acc2f55040    GET  /api/v1/partnersInAirport
+1    2020-11-27 16:16:12.297   INFO   77.105.179.110  01df7e3d-ad04-47b0-af5d-b3acc2f55040    GET  /api/v1/partnersInAirport
+12   2020-11-27 16:17:45.506   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/partnersInAirport
+13   2020-11-27 16:17:45.507   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/partnersInAirport
+17   2020-11-27 16:17:53.654   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/partnersInAirport
+...                      ...    ...              ...                                   ...    ...                        ...
+2491 2020-11-30 04:30:09.271  DEBUG    212.46.18.183  41722531-d7ce-4944-9ec0-143f5ed97e92    GET  /api/v1/partnersInAirport
+2492 2020-11-30 04:30:09.428   INFO    212.46.18.183  41722531-d7ce-4944-9ec0-143f5ed97e92    GET  /api/v1/partnersInAirport
+2532 2020-11-30 07:37:02.672  DEBUG  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/partnersInAirport
+2533 2020-11-30 07:37:02.683   INFO  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/partnersInAirport
+2539 2020-11-27 20:08:07.823   INFO      91.400.1.68  f4830e3b-5426-4f6a-bb69-02e145a833e3    GET  /api/v1/partnersInAirport
+
+[554 rows x 6 columns]====================================================================================
+=======================================prohibited routes=================================
+                        date  level       ip_address                                   sid method                  api_route
+0    2020-11-27 16:16:12.297   INFO   77.105.179.110  01df7e3d-ad04-47b0-af5d-b3acc2f55040    GET  /api/v1/partnersInAirport
+1    2020-11-27 16:16:12.297   INFO   77.105.179.110  01df7e3d-ad04-47b0-af5d-b3acc2f55040    GET  /api/v1/partnersInAirport
+12   2020-11-27 16:17:45.506   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/partnersInAirport
+13   2020-11-27 16:17:45.507   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/partnersInAirport
+17   2020-11-27 16:17:53.654   INFO      91.108.0.68  27be1e41-7ffe-4cb2-bf8d-0f439d50e6dd    GET  /api/v1/partnersInAirport
+...                      ...    ...              ...                                   ...    ...                        ...
+2491 2020-11-30 04:30:09.271  DEBUG    212.46.18.183  41722531-d7ce-4944-9ec0-143f5ed97e92    GET  /api/v1/partnersInAirport
+2492 2020-11-30 04:30:09.428   INFO    212.46.18.183  41722531-d7ce-4944-9ec0-143f5ed97e92    GET  /api/v1/partnersInAirport
+2532 2020-11-30 07:37:02.672  DEBUG  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/partnersInAirport
+2533 2020-11-30 07:37:02.683   INFO  178.252.127.205  8541b88f-3494-49be-94d4-d1a894b753ad    GET  /api/v1/partnersInAirport
+2539 2020-11-27 20:08:07.823   INFO      91.400.1.68  f4830e3b-5426-4f6a-bb69-02e145a833e3    GET  /api/v1/partnersInAirport
+
+[554 rows x 6 columns]====================================================================================

@@ -1,0 +1,4 @@
+
+{/api/v1/profile}, 
+{/api/v1/partnersInAirport}, 
+{/api/v1/partnersInAirport}

@@ -1,18 +1,61 @@
+import time
+import os
+import pandas as pd
+
+
 
 
 
 
 class Analytic():
+
     def __init__(self, frame, level):
         self.frame=frame
         self.level=level
+        self.file_name_routes = 'routes.txt'
+        self.result = 'result.txt'
+        self.path_result = os.path.abspath(self.result)
+        self.path_routes = os.path.abspath(self.file_name_routes)
 
-    @classmethod
-    def timedelta(cls, frame1,frame2):
-        print("===============================================================================")
 
-    @classmethod
-    def check_ip(cls, frame):
+
+    def timedelta(self, time1,time2, frame1, frame2):
+        delta=time2-time1
+        if delta.seconds < 2:
+            with open(self.result, 'a') as out:
+                out.write(str(frame1) + '\n')
+                out.write("============================================================================" + '\n')
+                out.write(str(frame2) + '\n')
+                
+
+
+    def prohibit_route(self, frame):
+
+        df=pd.read_csv(self.path_routes, sep='}',
+        encoding='utf-8',
+        names=["routes"], 
+        usecols=["routes"], 
+        engine='python'
+        
+        )
+        
+        length_df=len(df.index)
+        cnt=0
+        
+        while length_df-1>=cnt:
+            str_route=df.iat[cnt,0]
+            mask=frame['api_route']
+            mask_frame=frame.loc[mask==str_route[1:len(str_route)]]
+            with open(self.result, 'a') as out:
+                out.write("=======================================prohibited routes================================="+ '\n')
+                out.write(str(mask_frame))
+                out.write("===================================================================================="+ '\n')
+                
+            cnt=cnt+1
+        
+
+
+    def check_ip(self, frame):
         len_before=len(frame.index)
         tmp_ip=frame.iat[0,2]
         frame_ip=frame['ip_address']
@@ -26,8 +69,8 @@ class Analytic():
         else:
             return  False
 
-    @classmethod
-    def find_pair_ip(cls, frame):
+
+    def find_pair_ip(self, frame):
 
         frame_length=len(frame.index)
         cnt=0
@@ -37,16 +80,8 @@ class Analytic():
             if frame.iat[cnt,2]==frame.iat[cnt+1,2]:
                 cnt=cnt+1
             else:
-                cls.timedelta(frame.iat[cnt,0],frame.iat[cnt+1,0])
+                self.timedelta(frame.iat[cnt,0],frame.iat[cnt+1,0], frame.iloc[cnt,:], frame.iloc[cnt+1,:])
                 cnt=cnt+1
-
-
-
-
-
-
-
-
 
 
     def find_ip(self,frame,level):
@@ -65,34 +100,11 @@ class Analytic():
                 pass
             else:
                 frame_sid = mask_level_.loc[mask_sid == sid]    # taking sid from frame
+
                 if self.check_ip(frame_sid):
                     pass
                 else:
                     self.find_pair_ip(frame_sid)# computing time between two ip address
-
-
-
-
-
-
-
-        # mask_sid_=mask_level_.loc[mask_sid==mask_level_.iat[0,3]]
-
-        # print(mask_sid_)
-        #
-        # if self.check_ip(mask_sid_):
-        #     print("only one ip in session")
-        # else:
-        #     print(mask_sid_,"ip more than one in session")
-
-
-
-
-
-
-
-
-
 
 
 

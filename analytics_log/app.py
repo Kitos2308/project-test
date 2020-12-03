@@ -22,7 +22,11 @@ df = pd.read_csv(path,encoding='utf-8', sep=": " ,engine='python',
 
 
 
+if __name__ == '__main__':
 
-first=Analytic(df,"INFO")
 
-first.find_ip(df, "INFO")
+    first=Analytic(df,"INFO")
+
+    first.find_ip(df, "INFO")
+
+    first.prohibit_route(df)
